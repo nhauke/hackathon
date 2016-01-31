@@ -20,12 +20,17 @@
         android:id="@+id/TopBar"
         android:background="#FFFFFF"
         android:textSize="24dp"
-        android:textColor="#263238"
+        android:textColor="#fbf9f9"
         android:textAlignment="center"
-        android:singleLine="false"
-        android:password="false"
-        android:phoneNumber="false"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:singleLine="false" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hello"
+        android:id="@+id/text_motivate"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fbf9f9" />
 </RelativeLayout>
