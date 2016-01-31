@@ -21,4 +21,14 @@
         android:textSize="25dp"
         android:singleLine="false"
         android:textColor="#fbf9f9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hello"
+        android:id="@+id/text_motivate"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fbf9f9" />
 </RelativeLayout>
