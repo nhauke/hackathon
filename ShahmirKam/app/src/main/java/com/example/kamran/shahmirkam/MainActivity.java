@@ -14,6 +14,7 @@ import java.io.*;
 import java.util.*;
 
 public class MainActivity extends AppCompatActivity {
+
     private TextView motivateText;
 
     @Override
@@ -24,22 +25,6 @@ public class MainActivity extends AppCompatActivity {
         int index = 0;
         int val = 30;
         ArrayList<Integer> indexes = new ArrayList<Integer>();
-        /* ArrayList<String> quotes = new ArrayList<String>();
-        //File f = new File("C:\\Users\\Kamran\\Documents\\Android App\\hackathon\\hackathon\\Motivational Quotes.txt");
-        File f = new File("com/example/kamran/shahmirkam/Motivational Quotes.txt");
-        Scanner file1 = null;
-        try {
-            file1 = new Scanner(f);
-        } catch (Exception e) {
-            System.out.println(e);
-            System.out.println("could not find file");
-        }
-        for (int i = 0; i < 30; i++) {
-            indexes.add(i);
-        }
-        while (file1.hasNextLine()) {
-            quotes.add(file1.nextLine() + "\n");
-        }*/
         String[] text_quotes = {
                 "1.  Go for it now. The future is promised to no one.",
                 "2.  The more weird you are is a reflection of how committed you are to focusing on your goal",
@@ -70,12 +55,11 @@ public class MainActivity extends AppCompatActivity {
         "27. You've got to get up every morning with determination if you're going to go to bed with satisfaction",
         "28. Failure is the condiment that gives success its flavor"
         };
+
         ArrayList<String> quotes = new ArrayList<>(Arrays.asList(text_quotes));
-//        System.out.println(quotes.get(index));
         motivateText = (TextView) findViewById(R.id.text_motivate);
         motivateText.setText(quotes.get(index));
         quotes.remove(index);
-
     }
 }
 
