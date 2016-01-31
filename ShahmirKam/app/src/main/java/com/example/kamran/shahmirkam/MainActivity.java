@@ -1,5 +1,6 @@
 package com.example.kamran.shahmirkam;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -22,6 +23,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Typeface myTypeface = Typeface.createFromAsset(getAssets(), "cord.ttf");
+        TextView myTextView = (TextView)findViewById(R.id.textView);
+        myTextView.setTypeface(myTypeface);
+
+        Typeface kamType = Typeface.createFromAsset(getAssets(), "cord.ttf");
+        TextView myText = (TextView)findViewById(R.id.text_motivate);
+        myText.setTypeface(kamType);
 
         int index = 0;
         int val = 30;
