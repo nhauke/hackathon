@@ -7,22 +7,11 @@
     android:paddingBottom="2dp"
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
-    android:paddingTop="15dp"
+    android:paddingTop="25dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.kamran.shahmirkam.MainActivity"
     tools:showIn="@layout/activity_main"
-    android:background="@drawable/hi">
-
-    <TextView
-        android:layout_width="340dp"
-        android:layout_height="60dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/TopBar"
-        android:background="#FFFFFF"
-        android:textSize="24dp"
-        android:textColor="#fbf9f9"
-        android:textAlignment="center"
-        android:singleLine="false" />
+    android:background="@drawable/g">
 
     <TextView
         android:layout_width="wrap_content"
